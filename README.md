@@ -2,7 +2,7 @@
 
 Repository for learning javascript
 
-<ol>
+<ul type="square">
 <li> Keywords </li>
 <li> data type</li>
 <li> type converison</li>
@@ -19,4 +19,4 @@ Repository for learning javascript
 <li> memory</li>
 <li> scope</li>
 
-</ol>
+</ul>

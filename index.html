@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Dom manipulation</title>
+  </head>
+  <body>
+    <h1 id="hello" class="colo">Hello world</h1>
+    <h2 class="colo">h2 tag</h2>
+    <h3 class="colo">h3 tag</h3>
+    <p id="newp" class="colo"></p>
+    <script>
+      document.getElementById("hello").innerHTML = "Prashant Hello world";
+      let elet = document.getElementsByTagName("h2");
+      console.log(elet);
+      document.getElementById("newp").innerHTML = "hello world";
+      document.getElementsByClassName("colo").style.property;
+    </script>
+  </body>
+</html>

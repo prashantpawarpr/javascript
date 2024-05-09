@@ -18,5 +18,13 @@ Repository for learning javascript
 <li> Math</li>
 <li> memory</li>
 <li> scope</li>
+<li> IIFE
+<ul>
+<li>Immediate invoke function expression</li>
+<li>named IIFE</li>
+      <li>unnamed IIFE</li>
+    </ul>
+
+  </li>
 
 </ul>

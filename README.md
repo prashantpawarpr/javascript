@@ -25,6 +25,21 @@ Repository for learning javascript
       <li>unnamed IIFE</li>
     </ul>
 
-  </li> </ul>
+  </li> 
+<li>Java Execution Context</li>
 
-<h1 style="text-align: center;">JAVA EXECUTION CONTEXT</h1>
+</ul>
+
+<h1 style="text-align: center;">JAVASCRIPT EXECUTION CONTEXT</h1>
+<p>
+when javascript code run it create  two thing 
+1. Global Execution CONTEXT
+  GEC is absolute it will form when we run javascript code 
+  GEC behave differently in browser and in run time environment(node , bun , dino)
+                 In Browser it will global object which will be refered by this keywords
+                 while in run time environment it will be give empty object
+2.function/functional Execution Context(memory creation phase , execution phase)
+                 Memory Creation Phase (Only memory is allocated to the variable and function)
+                Exection Phase (value is assigned to the variable )
+
+</p>

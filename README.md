@@ -31,7 +31,7 @@ Repository for learning javascript
 </ul>
 
 <h1 style="text-align: center;">JAVASCRIPT EXECUTION CONTEXT</h1>
-<p>
+<pre><p>
 when javascript code run it create  two thing 
 1. Global Execution CONTEXT
   GEC is absolute it will form when we run javascript code 
@@ -43,3 +43,4 @@ when javascript code run it create  two thing
                 Exection Phase (value is assigned to the variable )
 
 </p>
+</pre>

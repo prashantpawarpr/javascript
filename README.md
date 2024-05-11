@@ -84,18 +84,23 @@ few important point to take note of :-
     console.log(2??null);
     console.log(null??2);
     console.log(undefined??2);
-    console.log(undefined??null);//the second value will be displayed
+    console.log(undefined??null);//the second value will be displayed when we compare the undefined or null because once it see the
+                                  first value is undefined/null it will jump to second value;
 
   </p>
-
 </pre>
   #HIGHER ORDER LOOP
 <pre>
-  ### For in loop
+  <h3>For in loop</h3>
     to iterate over object we use for in loop
-  ### For of loop
+  <h3> For of loop</h3>
     to iterate over array,map we use for of loop
-  ## MAP => is similar like object
+  <h4> MAP => is similar like object</h4>
             and has unique key (copy of the key is avoided)
+            if we use for of loop to display the map. it will return the entire map in array format
+  <h4>For Each=> is higher order function i.e is it takes callback function as a parameter 
+                it will iterate over the each element
+                it takes a callback function i.e either anoynomous function or arrow function
 
+  </h4>
 </pre>

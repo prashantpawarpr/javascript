@@ -47,7 +47,29 @@
 //   console.log(myObj[key]);
 // }
 //
-let arr = ["js", "cpp", "py", "java"];
-for (let key in arr) {
-  console.log(arr[key]);
-}
+// let arr = ["js", "cpp", "py", "java"];
+// for (let key in arr) {
+//   console.log(key);
+// }
+
+//for each
+// item, index , arr
+// let arr = [12, 21, 2, 12, 1, 22];
+// arr.forEach((items, index, arr) => {
+//   console.log(items), console.log(index), console.log(arr);
+// });
+// arr.forEach(test);
+//another way
+// function test(items) {
+//   console.log(items);
+// }
+
+let obj_in_array = [
+  { lName: "javascript", lExtenstion: "js" },
+  { lName: "java", lExtenstion: "java" },
+  { lName: "html", lExtenstion: "html" },
+  { lName: "c++", lExtenstion: "cpp" },
+];
+obj_in_array.forEach((items) => {
+  console.log(items.lExtenstion);
+});

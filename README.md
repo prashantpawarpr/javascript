@@ -28,6 +28,7 @@ Repository for learning javascript
   </li> 
 <li>Java Execution Context</li>
 <li>CONDITIONAL statement</li>
+<li>Higher order loop</li>
 
 </ul>
 
@@ -86,5 +87,15 @@ few important point to take note of :-
     console.log(undefined??null);//the second value will be displayed
 
   </p>
+
+</pre>
+  #HIGHER ORDER LOOP
+<pre>
+  ### For in loop
+    to iterate over object we use for in loop
+  ### For of loop
+    to iterate over array,map we use for of loop
+  ## MAP => is similar like object
+            and has unique key (copy of the key is avoided)
 
 </pre>

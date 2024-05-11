@@ -23,7 +23,7 @@ Repository for learning javascript
 <li>Immediate invoke function expression</li>
 <li>named IIFE</li>
       <li>unnamed IIFE</li>
-    </ul>
+    </ul
 
   </li> 
 <li>Java Execution Context</li>
@@ -43,4 +43,47 @@ when javascript code run it create  two thing
                 Exection Phase (value is assigned to the variable )
 
 </p>
+</pre>
+# CONDITIONAL STATEMENT
+<pre>
+<p>
+few important point to take note of :-
+    if we use if statement we can use statement without {} and if we want to write multiply statement without
+    using {} we can do by seperating them using comma(,) and secicolon is mandatory at the end of the if statement syntax
+ ### TRUTHY AND FALSY VALUE
+          falsy value are limited so we will write down the falsy value first
+          1.  0  
+          2.  -0
+          3.  Bigint 0n
+          4.  ""
+          5. null
+          6. undefined
+          7. NaN
+          And all other value are falsy value 
+         1.function(){} 
+         2."0" 
+         3."null"
+         4. "false"
+         5.[] 
+         6.{}
+         6.""
+   ###  NOTE FOR CHECKING ARRAY AND object
+    if(arr.length==0){
+    console.log("the array is empty");
+    }
+
+    //object CHECKING
+    if(Object.keys(obj).length===0){
+    console.log("the obj is empty");
+    }
+
+### NULLISH COALISCING OPERATOR (??) to check "null" or undefined value
+
+    console.log(2??null);
+    console.log(null??2);
+    console.log(undefined??2);
+    console.log(undefined??null);//the second value will be displayed
+
+  </p>
+
 </pre>

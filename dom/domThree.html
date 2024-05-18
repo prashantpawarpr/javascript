@@ -1,0 +1,19 @@
+<!DOCTYPE >
+<html>
+  <head> </head>
+  <body style="background-color: #313131; color: white"></body>
+  <script>
+    const body = document.body;
+    //method to create elemet is createElement
+
+    const div = document.createElement("h1");
+    div.className = "test";
+    div.id = "myId";
+    div.style.color = "green";
+    div.setAttribute("style", "background-color:blue");
+    let addText = document.createTextNode("hello i am prshant");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+    console.log(div);
+  </script>
+</html>

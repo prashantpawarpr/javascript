@@ -1,0 +1,64 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <style>
+      .head {
+        padding: 15px;
+        background-color: #313131;
+      }
+      .head_button {
+        color: black;
+        padding: 10px;
+        border: 1px solid #313131;
+        border-radius: 5px;
+      }
+      .para_div {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 100px;
+        font-size: 18px;
+      }
+      .para_div_box {
+        padding: 50px;
+        display: inline-block;
+        border: 3px solid black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="head">
+      <button class="head_button" type="button">Home</button>
+      <button class="head_button" type="button">Youtube channel</button>
+    </header>
+    <div>
+      <p class="para_div">ColorScheme Switcher</p>
+    </div>
+    <div style="margin-left: 200px">
+      <div class="para_div_box" style="background-color: gray"></div>
+      <div class="para_div_box" style="background-color: white"></div>
+      <div class="para_div_box" style="background-color: blue"></div>
+      <div class="para_div_box" style="background-color: yellow"></div>
+    </div>
+    <div style="width: 300px; margin-left: 250px; margin-top: 30px">
+      <p class="para_div" style="margin: 0px">
+        Try Clicking on one of the colors above to change the background color
+        of this page!
+      </p>
+    </div>
+  </body>
+  <script>
+    document.getElementsByClassName("para_div_box")[0].onclick = function () {
+      document.body.style.backgroundColor = "gray";
+    };
+    document.getElementsByClassName("para_div_box")[1].onclick = function () {
+      document.body.style.backgroundColor = "white";
+    };
+    document.getElementsByClassName("para_div_box")[2].onclick = function () {
+      document.body.style.backgroundColor = "blue";
+    };
+    document.getElementsByClassName("para_div_box")[3].onclick = function () {
+      document.body.style.backgroundColor = "yellow";
+    };
+  </script>
+</html>

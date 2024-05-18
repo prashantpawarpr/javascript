@@ -1,0 +1,29 @@
+<!DOCTYPE >
+<html>
+  <body style="background-color: #313131; color: #fff">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    let parent_div = document.querySelector(".parent");
+    console.log(parent_div.lastElementChild);
+    console.log(parent_div.childNodes);
+    //.children
+    //.firstElementChild
+    //.lastElementChild
+    //childNotes :- gives all the notes of the element in nodelist formate
+    //  text (i.e mon , tues )
+    //class
+
+    Array.from(parent_div.children).forEach((items) =>
+      items.setAttribute("style", "color:red"),
+    );
+    let child_selector = document.querySelector(".day");
+    console.log(child_selector.parentElement);
+    console.log(child_selector.nextElementSibling);
+  </script>
+</html>

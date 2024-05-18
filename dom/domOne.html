@@ -1,0 +1,107 @@
+<!DOCTYPE >
+<html>
+  <head> </head>
+  <body style="color: green; background-color: black">
+    <h1>hello wordl</h1>
+    <h1>hello wordl</h1>
+    <h2>hello wordl</h2>
+    <p id="a" class="para">
+      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum
+      sint
+      <span style="display: none"><bold>Prashant Pawar</bold></span> consectetur
+      cupidatat.
+    </p>
+    <ul>
+      <li class="list">hello world</li>
+      <li class="list">hello world1</li>
+      <li class="list">hello world2</li>
+      <li class="list">hello world3</li>
+      <li class="list">hello world4</li>
+      <li class="list">hello world5</li>
+    </ul>
+  </body>
+
+  <script>
+    let a = document.getElementById("a");
+    console.log("hello world");
+    a.style.color = "red";
+    console.log("id name is ", a.id);
+    //gives the id of the a(i.e)
+    console.log("classname is ", a.className);
+    //gives the className of the selected file
+    console.log(a.getAttribute("id"));
+    //getAttribute is a function as a parameter it takes the value that we want to the know the details id
+    console.log(a.getAttribute("class"));
+    console.log(a.getAttribute("style"));
+    //getAttribute is a function as a parameter it takes the value that we want to the know the details about the className
+    a.setAttribute("style", "color:blue");
+    //setAttribute always override the previous value
+    //! style elemtent is used to put css html
+    a.setAttribute("style", "background-color:green");
+    a.style.color = "white";
+    a.style.padding = "10px";
+    a.style.borderRadius = "15px";
+
+    /*
+
+        different way to get the value out of the tag
+
+
+        */
+
+    console.log("Text content \n", a.textContent);
+    console.log("inner Text \n\n", a.innerText);
+    console.log("inner HTML \n", a.innerHTML);
+    /*
+        difference between text content , innerText and innerHTML
+
+        innerHTML give all the content and tag that contents inside selected tag
+
+        innerText give only the content of the tag if the content is hidden it won't show anything
+
+        textContent give the whole content whether it is hidden or not
+    */
+    let select_className = document.getElementsByClassName("para");
+    console.log(a);
+    console.log(select_className);
+    /*
+different query selector 
+
+querySelector('h1');
+
+
+    */
+    // let qSelector = document.querySelector("h2");
+    // let qSelector1 = document.querySelector("#a");
+    // let qSelector2 = document.querySelector(".para");
+    // console.log(qSelector1);
+    // console.log(qSelector2);
+
+    // console.log(qSelector);
+    let qSelectorAll = document.querySelectorAll("h1");
+    console.log(qSelectorAll);
+    qSelectorAll.forEach((items) => {
+      items.style.color = "red";
+      console.log("", items);
+    });
+    console.log(qSelectorAll);
+    let qSelector1 = document.querySelectorAll("h2");
+    console.log(qSelector1);
+    qSelector1.forEach((items) => (items.style.color = "red"));
+
+    // let ul_selector = document.querySelector("ul");
+    // let first = ul_selector.querySelector("li");
+    // console.log("", first);
+    // ul_selector.style.color = "red";
+    // first.style.color = "white";
+    // first.innerText = "prashant pawar";
+    // console.log(first.innerText);
+    let class_selector = document.getElementsByClassName("list");
+    console.log(class_selector);
+    // for (let a = 1; a <= class_selector.length - 1; a++) {
+    //   console.log((class_selector[a].style.color = "red"));
+    // }
+    Array.from(class_selector).forEach((items) => (items.style.color = "red"));
+    //we can convert nodelist and htmlcollection to array using Array.from() method
+  </script>
+</html>
